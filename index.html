@@ -210,8 +210,9 @@
   .pl-row .bar{flex:1;height:10px;background:#eef1f8;border-radius:5px;overflow:hidden;}
   .pl-row .bar i{display:block;height:100%;border-radius:5px;transition:filter .18s;}
   .pl-row:hover .bar i{filter:brightness(1.12) saturate(1.15);}
-  .pl-row .val{width:96px;font-size:12px;color:var(--ink-2);text-align:right;flex:none;font-variant-numeric:tabular-nums;}
+  .pl-row .val{width:170px;font-size:12px;color:var(--ink-2);text-align:right;flex:none;font-variant-numeric:tabular-nums;white-space:nowrap;}
   .pl-row .val b{color:var(--ink);font-size:13px;}
+  .pl-row .val .seg{color:var(--ink-3);font-size:11px;}
   .share-row{display:flex;align-items:center;gap:10px;padding:6px 8px;margin:0 -8px;border-radius:8px;transition:background .18s ease,transform .18s ease;}
   .share-row:hover{background:var(--blue-bg);transform:translateX(2px);}
   .share-row:hover .bar{filter:brightness(1.08) saturate(1.15);}
@@ -355,14 +356,14 @@
       <div class="pie-wrap">
         <div class="pie"><div class="pc"><div class="n">38 天</div><div class="l">进行中工期合计</div></div></div>
         <div class="pie-legend">
-          <div class="pl-row"><span class="dot" style="background:#2b5cff"></span><span class="nm">曾珮琤</span><div class="bar"><i style="width:100%;background:linear-gradient(90deg,#3d74ff,#2b5cff)"></i></div><span class="val"><b>14 天</b> · 36.8%</span></div>
-          <div class="pl-row"><span class="dot" style="background:#00b3e6"></span><span class="nm">谢林容</span><div class="bar"><i style="width:85.9%;background:linear-gradient(90deg,#33c6ef,#00b3e6)"></i></div><span class="val"><b>12 天</b> · 31.6%</span></div>
-          <div class="pl-row"><span class="dot" style="background:#0aa870"></span><span class="nm">陈凡凡</span><div class="bar"><i style="width:64.3%;background:linear-gradient(90deg,#16c184,#0aa870)"></i></div><span class="val"><b>9 天</b> · 23.7%</span></div>
-          <div class="pl-row"><span class="dot" style="background:#f5882b"></span><span class="nm">彭嵩</span><div class="bar"><i style="width:21.4%;background:linear-gradient(90deg,#ffa14d,#f5882b)"></i></div><span class="val"><b>3 天</b> · 7.9%</span></div>
+          <div class="pl-row"><span class="dot" style="background:#2b5cff"></span><span class="nm">曾珮琤</span><div class="bar"><i style="width:100%;background:linear-gradient(90deg,#3d74ff,#2b5cff)"></i></div><span class="val"><b>14 天</b> · 36.8% <span class="seg">（开发 8 + 联调 6）</span></span></div>
+          <div class="pl-row"><span class="dot" style="background:#00b3e6"></span><span class="nm">谢林容</span><div class="bar"><i style="width:85.9%;background:linear-gradient(90deg,#33c6ef,#00b3e6)"></i></div><span class="val"><b>12 天</b> · 31.6% <span class="seg">（开发 6 + 联调 6）</span></span></div>
+          <div class="pl-row"><span class="dot" style="background:#0aa870"></span><span class="nm">陈凡凡</span><div class="bar"><i style="width:64.3%;background:linear-gradient(90deg,#16c184,#0aa870)"></i></div><span class="val"><b>9 天</b> · 23.7% <span class="seg">（开发 9 + 联调 0）</span></span></div>
+          <div class="pl-row"><span class="dot" style="background:#f5882b"></span><span class="nm">彭嵩</span><div class="bar"><i style="width:21.4%;background:linear-gradient(90deg,#ffa14d,#f5882b)"></i></div><span class="val"><b>3 天</b> · 7.9% <span class="seg">（开发 3 + 联调 0）</span></span></div>
           <div class="pl-row"><span class="dot" style="background:#c3cad6"></span><span class="nm">牟俊红</span><div class="bar"><i style="width:2%;background:#c3cad6"></i></div><span class="val"><b>—</b> · 未登记</span></div>
         </div>
       </div>
-      <div class="chart-note">口径：进行中需求研发工期合计（前端 + 后端 + 测试工期天数），共 38 天、32 项进行中需求；数据系统需求未在表中登记工期天数，暂不计入统计。</div>
+      <div class="chart-note">口径：每位负责人仅统计本人名下进行中需求的开发工期（前端 + 后端）与联调工期，共 38 天、32 项进行中需求；数据系统需求未在表中登记工期天数，暂不计入统计。</div>
     </div>
   </div>
   </section>
