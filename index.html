@@ -179,10 +179,6 @@
     .share-row .nm{width:52px;font-size:12px;}
     .stk-bar{height:13px;}
     td .it .dsc{font-size:11.5px;}
-    .pie{width:140px;height:140px;}
-    .pie::before{inset:28px;}
-    .pie .pc .n{font-size:18px;}
-    .pie-wrap{gap:18px;justify-content:center;}
   }
   /* 负责人图表 */
   .charts{display:grid;grid-template-columns:1fr 1.25fr;gap:14px;margin:16px 0 20px;}
@@ -191,28 +187,6 @@
   .charts h3{font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:12px;margin-top:2px;}
   .charts h3 .idx{width:20px;height:20px;border-radius:6px;background:var(--grad-main);color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 3px 8px -2px rgba(43,92,255,.45);}
   .chart-note{color:var(--ink-3);font-size:11.5px;margin-top:12px;padding-top:8px;border-top:1px dashed var(--line);}
-  /* 耗时占比饼图 */
-  .pie-card{grid-column:1 / -1;}
-  .pie-wrap{display:flex;align-items:center;gap:36px;flex-wrap:wrap;padding:6px 4px 2px;}
-  .pie{width:172px;height:172px;border-radius:50%;flex:none;position:relative;
-    background:conic-gradient(#2b5cff 0 36.8%,#00b3e6 36.8% 68.4%,#0aa870 68.4% 92.1%,#f5882b 92.1% 100%);
-    box-shadow:0 8px 24px -10px rgba(43,92,255,.45),inset 0 0 0 1px rgba(255,255,255,.6);}
-  .pie::before{content:"";position:absolute;inset:34px;border-radius:50%;background:linear-gradient(180deg,#ffffff,#f7faff);box-shadow:0 0 0 1px var(--line),0 6px 18px -8px rgba(23,43,99,.18);}
-  .pie .pc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;line-height:1.3;}
-  .pie .pc .n{font-size:22px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;}
-  .pie .pc .l{font-size:10.5px;color:var(--ink-3);}
-  .pie-legend{flex:1;min-width:250px;}
-  .pl-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;transition:all .18s;}
-  .pl-row + .pl-row{margin-top:2px;}
-  .pl-row:hover{background:var(--blue-bg);transform:translateX(2px);}
-  .pl-row .dot{width:10px;height:10px;border-radius:3px;flex:none;}
-  .pl-row .nm{width:60px;font-weight:600;font-size:13px;flex:none;}
-  .pl-row .bar{flex:1;height:10px;background:#eef1f8;border-radius:5px;overflow:hidden;}
-  .pl-row .bar i{display:block;height:100%;border-radius:5px;transition:filter .18s;}
-  .pl-row:hover .bar i{filter:brightness(1.12) saturate(1.15);}
-  .pl-row .val{width:170px;font-size:12px;color:var(--ink-2);text-align:right;flex:none;font-variant-numeric:tabular-nums;white-space:nowrap;}
-  .pl-row .val b{color:var(--ink);font-size:13px;}
-  .pl-row .val .seg{color:var(--ink-3);font-size:11px;}
   .share-row{display:flex;align-items:center;gap:10px;padding:6px 8px;margin:0 -8px;border-radius:8px;transition:background .18s ease,transform .18s ease;}
   .share-row:hover{background:var(--blue-bg);transform:translateX(2px);}
   .share-row:hover .bar{filter:brightness(1.08) saturate(1.15);}
@@ -351,20 +325,6 @@
       </div>
     </div>
 
-    <div class="card pie-card">
-      <h3><span class="idx">6</span>各负责人进行中需求耗时占比</h3>
-      <div class="pie-wrap">
-        <div class="pie"><div class="pc"><div class="n">38 天</div><div class="l">进行中工期合计</div></div></div>
-        <div class="pie-legend">
-          <div class="pl-row"><span class="dot" style="background:#2b5cff"></span><span class="nm">曾珮琤</span><div class="bar"><i style="width:100%;background:linear-gradient(90deg,#3d74ff,#2b5cff)"></i></div><span class="val"><b>14 天</b> · 36.8% <span class="seg">（开发 8 + 联调 6）</span></span></div>
-          <div class="pl-row"><span class="dot" style="background:#00b3e6"></span><span class="nm">谢林容</span><div class="bar"><i style="width:85.9%;background:linear-gradient(90deg,#33c6ef,#00b3e6)"></i></div><span class="val"><b>12 天</b> · 31.6% <span class="seg">（开发 6 + 联调 6）</span></span></div>
-          <div class="pl-row"><span class="dot" style="background:#0aa870"></span><span class="nm">陈凡凡</span><div class="bar"><i style="width:64.3%;background:linear-gradient(90deg,#16c184,#0aa870)"></i></div><span class="val"><b>9 天</b> · 23.7% <span class="seg">（开发 9 + 联调 0）</span></span></div>
-          <div class="pl-row"><span class="dot" style="background:#f5882b"></span><span class="nm">彭嵩</span><div class="bar"><i style="width:21.4%;background:linear-gradient(90deg,#ffa14d,#f5882b)"></i></div><span class="val"><b>3 天</b> · 7.9% <span class="seg">（开发 3 + 联调 0）</span></span></div>
-          <div class="pl-row"><span class="dot" style="background:#c3cad6"></span><span class="nm">牟俊红</span><div class="bar"><i style="width:2%;background:#c3cad6"></i></div><span class="val"><b>—</b> · 未登记</span></div>
-        </div>
-      </div>
-      <div class="chart-note">口径：每位负责人仅统计本人名下进行中需求的开发工期（前端 + 后端）与联调工期，共 38 天、32 项进行中需求；数据系统需求未在表中登记工期天数，暂不计入统计。</div>
-    </div>
   </div>
   </section>
 
