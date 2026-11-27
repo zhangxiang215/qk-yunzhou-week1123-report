@@ -228,8 +228,7 @@
     <div class="t-title">导 览</div>
     <a href="#sec1">一、本周总体概览</a>
     <a href="#sec2">二、各系统进展明细</a>
-    <a href="#sec3">三、问题与风险</a>
-    <a href="#sec4">四、下周推进计划</a>
+    <a href="#sec3">三、下周推进计划</a>
     <div class="t-title" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line);">往期汇报</div>
     <a href="midweek-1123.html">周中进展（11.23–11.25）</a>
   </nav>
@@ -277,16 +276,24 @@
     <div class="col">
       <h3><span class="idx">3</span>重点关注</h3>
       <div class="sub">
-        <div class="st">延期风险</div>
-        <div class="sd">销售系统迁移因需求插队<b>上线时间顺延</b>；数据系统业绩统计账单（P0，原计划 <b>11.19</b>）仍开发中</div>
+        <div class="st">销售系统迁移（综合系统管控）延期上线</div>
+        <div class="sd">因更高优先级需求插队<b>上线时间顺延</b>，当前联调中；迁移上线前还需改造员工信息查询（新增无需鉴权接口）</div>
       </div>
       <div class="sub">
-        <div class="st">需求返工</div>
-        <div class="sd">订单退款审核与使用方预期差异过大需二次开发，连带影响群发助手节奏</div>
+        <div class="st">订单退款审核与使用方预期差异过大，需二次开发</div>
+        <div class="sd">V1.0 已上线但与合规部使用预期差异较大；连带影响群发助手模拟点击功能节奏</div>
       </div>
       <div class="sub">
-        <div class="st">外部依赖受限</div>
-        <div class="sd">企微个人标签/聊天标签无查询接口，模拟点击筛选只能基于企业标签实现</div>
+        <div class="st">企微个人标签无官方查询接口，模拟点击筛选能力受限</div>
+        <div class="sd">仅企业标签可查询，按好友标签筛选只能基于企业标签实现，需与业务方确认口径</div>
+      </div>
+      <div class="sub">
+        <div class="st">小鹅通直播支付替换暂缓上线</div>
+        <div class="sd">后端链路已完成开发进入联调，因前端需新增订单详情页暂缓，待补充后统一交付</div>
+      </div>
+      <div class="sub">
+        <div class="st">全公司停电致本地服务器宕机（已恢复闭环）</div>
+        <div class="sd">MySQL、Redis、Docker、RocketMQ、ipad 服务已紧急恢复，数据恢复完毕</div>
       </div>
     </div>
   </div>
@@ -438,44 +445,9 @@
   <div class="note">统计口径：基于各负责人「周总结及下周计划」文档与需求管理表「11.23–11.27周」数据整理。</div>
   </section>
 
-  <!-- ============ 三、问题与风险 ============ -->
+  <!-- ============ 三、下周推进计划 ============ -->
   <section id="sec3">
-  <h2>三、问题与风险</h2>
-  <div class="risk">
-    <span class="lv">高</span>
-    <div class="rt">销售系统迁移（综合系统管控）延期上线</div>
-    <div class="rd">因更高优先级需求插队，鉴权体系、菜单路由、按钮权限、数据权限迁移综合系统上线时间顺延；当前联调中，迁移上线前还需改造销售系统员工信息查询（新增无需鉴权接口）。</div>
-    <div class="ra">涉及：彭嵩、谢林容 ｜ 迁移上线窗口需与插队需求重新对齐排期</div>
-  </div>
-  <div class="risk m">
-    <span class="lv">中</span>
-    <div class="rt">订单退款审核与使用方预期差异过大，需二次开发</div>
-    <div class="rd">V1.0 已上线但功能与合规部使用预期差异较大，需重新二次开发；受此影响，群发助手模拟点击功能完成时间可能后延。</div>
-    <div class="ra">涉及：陈凡凡 ｜ 二次开发范围需先与需求方对齐，避免反复返工</div>
-  </div>
-  <div class="risk m">
-    <span class="lv">中</span>
-    <div class="rt">企微个人标签无官方查询接口，模拟点击筛选能力受限</div>
-    <div class="rd">调研结论：企微开放平台仅提供企业标签及外部联系人关系查询接口，个人标签及聊天标签属个人自定义、无查询接口，模拟点击按好友标签筛选只能基于企业标签实现。</div>
-    <div class="ra">涉及：陈凡凡 ｜ 需与业务方确认筛选口径是否接受企业标签方案</div>
-  </div>
-  <div class="risk m">
-    <span class="lv">中</span>
-    <div class="rt">小鹅通直播支付替换暂缓上线</div>
-    <div class="rd">支付替换原计划本周上线，后端链路已完成开发进入联调；因前端需新增订单详情页面，整体暂缓上线，待前端补充完成后统一交付。</div>
-    <div class="ra">涉及：彭嵩、谢林容 ｜ 订单详情页排期需尽快确认，避免联调成果闲置</div>
-  </div>
-  <div class="risk m" style="border-left-color:var(--green);">
-    <span class="lv" style="background:var(--green-bg);color:var(--green);">已闭环</span>
-    <div class="rt">全公司停电致本地服务器宕机（已恢复）</div>
-    <div class="rd">上周末全公司停电致两台本地服务器宕机，MySQL、Redis、Docker、RocketMQ、ipad 相关服务已紧急恢复，数据完成恢复并重新配置 IP，故障排查完毕。</div>
-    <div class="ra">涉及：陈凡凡 ｜ 建议：评估本地部署服务的容灾与自动拉起机制</div>
-  </div>
-  </section>
-
-  <!-- ============ 四、下周推进计划 ============ -->
-  <section id="sec4">
-  <h2>四、下周推进计划</h2>
+  <h2>三、下周推进计划</h2>
   <div class="tbl-wrap">
   <table>
     <thead><tr><th style="width:96px;">负责人</th><th style="width:150px;">系统</th><th>事项</th><th style="width:84px;">周进度</th><th style="width:64px;">优先级</th></tr></thead>
