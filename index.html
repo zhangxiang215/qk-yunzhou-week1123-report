@@ -210,6 +210,14 @@
   .stk-bar .sg-plan{background:linear-gradient(90deg,#ffa14d,#f5882b);}
   .legend{display:flex;gap:14px;margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--ink-2);}
   .legend .dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px;vertical-align:1px;}
+  .risklist{display:flex;flex-direction:column;gap:8px;}
+  .rl{display:flex;align-items:flex-start;gap:9px;padding:8px 11px;background:#f8f9fd;border:1px solid var(--line);border-radius:9px;}
+  .rlv{flex:none;font-size:10.5px;padding:2px 9px;border-radius:20px;font-weight:600;margin-top:1px;letter-spacing:.5px;}
+  .r-high{background:var(--red-bg);color:var(--red);}
+  .r-mid{background:var(--orange-bg);color:var(--orange);}
+  .r-ok{background:var(--green-bg);color:var(--green);}
+  .rlt{font-size:12.5px;font-weight:600;color:var(--ink);line-height:1.45;}
+  .rld{font-size:11.5px;color:var(--ink-3);font-weight:500;margin-top:2px;line-height:1.5;}
 </style>
 </head>
 <body>
@@ -275,25 +283,12 @@
     </div>
     <div class="col">
       <h3><span class="idx">3</span>重点关注</h3>
-      <div class="sub">
-        <div class="st">销售系统迁移（综合系统管控）延期上线</div>
-        <div class="sd">因更高优先级需求插队<b>上线时间顺延</b>，当前联调中；迁移上线前还需改造员工信息查询（新增无需鉴权接口）</div>
-      </div>
-      <div class="sub">
-        <div class="st">订单退款审核与使用方预期差异过大，需二次开发</div>
-        <div class="sd">V1.0 已上线但与合规部使用预期差异较大；连带影响群发助手模拟点击功能节奏</div>
-      </div>
-      <div class="sub">
-        <div class="st">企微个人标签无官方查询接口，模拟点击筛选能力受限</div>
-        <div class="sd">仅企业标签可查询，按好友标签筛选只能基于企业标签实现，需与业务方确认口径</div>
-      </div>
-      <div class="sub">
-        <div class="st">小鹅通直播支付替换暂缓上线</div>
-        <div class="sd">后端链路已完成开发进入联调，因前端需新增订单详情页暂缓，待补充后统一交付</div>
-      </div>
-      <div class="sub">
-        <div class="st">全公司停电致本地服务器宕机（已恢复闭环）</div>
-        <div class="sd">MySQL、Redis、Docker、RocketMQ、ipad 服务已紧急恢复，数据恢复完毕</div>
+      <div class="risklist">
+        <div class="rl"><span class="rlv r-high">高</span><div class="rlt">销售系统迁移延期上线<div class="rld">需求插队，上线时间顺延，当前联调中</div></div></div>
+        <div class="rl"><span class="rlv r-mid">中</span><div class="rlt">订单退款审核需二次开发<div class="rld">与合规部预期差异较大，影响群发助手节奏</div></div></div>
+        <div class="rl"><span class="rlv r-mid">中</span><div class="rlt">企微个人标签无查询接口<div class="rld">筛选只能基于企业标签实现，需确认口径</div></div></div>
+        <div class="rl"><span class="rlv r-mid">中</span><div class="rlt">小鹅通支付替换暂缓上线<div class="rld">前端缺订单详情页，待补充后统一交付</div></div></div>
+        <div class="rl"><span class="rlv r-ok">已闭环</span><div class="rlt">停电致本地服务器宕机<div class="rld">服务与数据已全部恢复</div></div></div>
       </div>
     </div>
   </div>
