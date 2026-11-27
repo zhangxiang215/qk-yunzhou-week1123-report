@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week1123工作周 钱坤云业务系统建设周中进展</title>
+<title>Week1123工作周 钱坤云业务系统周总结及下周计划</title>
+<style>
 <style>
   :root{
     --ink:#111827; --ink-2:#3f4a5c; --ink-3:#8a94a6;
@@ -216,10 +217,11 @@
 <div class="page">
 
   <div class="head">
-    <h1>Week1123工作周 钱坤云业务系统建设周中进展</h1>
+    <h1>Week1123工作周 钱坤云业务系统周总结及下周计划</h1>
     <div class="meta">
-      <span>汇报周期：<b>11.23 – 11.25（周中）</b></span>
-      <span>需求进度管理表：<b><a href="https://docs.qq.com/sheet/DSENLdFF6TWJvakhm?tab=gr4750" target="_blank" style="color:var(--blue);text-decoration:none;">钱坤云业务系统需求管理表「11.23–11.27周」 ↗</a></b></span>
+      <span>汇报周期：<b>11.23 – 11.27（全周）</b></span>
+      <span>需求进度管理表：<b><a href="https://docs.qq.com/sheet/DSEZQTEFDa2RaQVJ4?tab=wv5peo" target="_blank">钱坤云业务系统需求管理表 ↗</a></b></span>
+      <span>往期汇报：<b><a href="midweek-1123.html" target="_blank">周中进展（11.23–11.25） ↗</a></b></span>
     </div>
   </div>
 
@@ -227,251 +229,242 @@
   <nav class="toc">
     <div class="t-title">导 览</div>
     <a href="#sec1">一、本周总体概览</a>
-    <a href="#sec2">二、各系统进展明细</a>
-    <a href="#sec3">三、问题与风险</a>
-    <a href="#sec4">四、本周重点关注</a>
+    <a href="#sec2">二、各负责人推进明细</a>
+    <a href="#sec3">三、数据可视化</a>
+    <a href="#sec4">四、重点关注与风险</a>
+    <a href="#sec5">五、下周推进计划</a>
+    <a href="midweek-1123.html">↩ 周中进展汇报</a>
   </nav>
 
   <main>
+
+  <!-- ============ 一、总体概览 ============ -->
   <section id="sec1">
   <h2>一、本周总体概览</h2>
   <div class="kpi">
-    <div class="item tint k1"><div class="num">12</div><div class="lab">涉及系统/模块</div></div>
-    <div class="item tint k2"><div class="num">21</div><div class="lab">已完成需求项</div></div>
-    <div class="item tint k3"><div class="num">32</div><div class="lab">进行中/待联调/测试中</div></div>
-    <div class="item tint k4"><div class="num">4</div><div class="lab">风险与阻塞事项</div></div>
+    <div class="item k1"><div class="num">77</div><div class="lab">需求/事项总数（本周新增推进）</div></div>
+    <div class="item k2"><div class="num">43</div><div class="lab">本周已完成</div></div>
+    <div class="item k3"><div class="num">19</div><div class="lab">进行中</div></div>
+    <div class="item k4"><div class="num">15</div><div class="lab">未开始（含长期跟进 1 项）</div></div>
   </div>
-  <div class="ov">
-    <div class="col">
-      <h3><span class="idx">1</span>需求总盘</h3>
-      <div class="chips">
-        <span class="chip chip-g">已完成 21</span>
-        <span class="chip chip-b">进行中 32</span>
-        <span class="chip chip-o">未开始 6</span>
-        <span class="chip chip-r">风险 4</span>
+  <div class="card">
+    <div class="ov" style="margin-top:2px;">
+      <div class="col">
+        <h3><span class="idx">1</span>上线交付情况</h3>
+        <div class="sub"><div class="st">本周上线需求合计 25 个</div>
+        <div class="sd">曾珮琤 14、陈凡凡 3、彭嵩 3、谢林容 0（联调为主）、数据系统 5；上线需求数采用各负责人周总结自报口径。</div></div>
+        <div class="sub"><div class="st">具备上线条件（含开发完成/待交付）22 个</div>
+        <div class="sd">曾珮琤 15、陈凡凡 3、彭嵩 2、谢林容 2，集中于小鹅通直播链路与退款审批 V2.0。</div></div>
       </div>
-      <div class="row"><span class="k">登记需求总数</span><span class="v"><b>59 项</b>（含长期协助事项）</span></div>
-      <div class="row"><span class="k">覆盖系统/模块</span><span class="v"><b>12 个</b>：获客、销售、合规、运维、直播、订单、数据、群发助手等</span></div>
-      <div class="row"><span class="k">整体判断</span><span class="v">推进可控，风险集中在 <b>节点顺延与外部依赖</b></span></div>
-    </div>
-    <div class="col">
-      <h3><span class="idx">2</span>重点主线</h3>
-      <div class="sub">
-        <div class="st">小鹅通支付替换为总部支付</div>
-        <div class="sd">销售、直播、直播小程序、订单系统四线并行，多项功能点 <b>11.27 节点上线</b></div>
+      <div class="col">
+        <h3><span class="idx">2</span>本周主线</h3>
+        <div class="sub"><div class="st">小鹅通直播支付替换全链路开发收尾</div>
+        <div class="sd">直播管理、商品配置、总部接口兼容改造等 11 项开发完成进入联调；因前端需新增订单详情页，支付替换暂缓上线。</div></div>
+        <div class="sub"><div class="st">企微退款审批 V1.0 上线</div>
+        <div class="sd">销售系统与合规系统退款审批链路打通并上线；V2.0 六项改造后端开发完成，待联调。</div></div>
+        <div class="sub"><div class="st">群发助手第三轮风控测试完成</div>
+        <div class="sd">基于 ipad 新包完成风控测试并输出测试报告，模拟点击方案进入开发。</div></div>
       </div>
-      <div class="sub">
-        <div class="st">订单退款审核闭环</div>
-        <div class="sd">V1.0 <b>已上线</b>；V2.0（二次开发）计划 <b>12.2</b></div>
-      </div>
-      <div class="sub">
-        <div class="st">销售系统迁移综合系统管控</div>
-        <div class="sd">鉴权/菜单/按钮/数据权限整体迁移，功能开发完成，待支付改造后启动联调</div>
-      </div>
-    </div>
-    <div class="col">
-      <h3><span class="idx">3</span>重点关注</h3>
-      <div class="sub">
-        <div class="st">逾期风险</div>
-        <div class="sd">销售系统迁移上线时间顺延；数据系统两项 P0（<b>11.19 / 11.20</b>）已超计划完成时间</div>
-      </div>
-      <div class="sub">
-        <div class="st">需求返工</div>
-        <div class="sd">订单退款审核与需求方预期差异过大需二次开发，连带影响群发助手节奏</div>
-      </div>
-      <div class="sub">
-        <div class="st">外部依赖阻塞</div>
-        <div class="sd">企微开放平台接口限制（个人标签/聊天标签无查询接口）</div>
+      <div class="col">
+        <h3><span class="idx">3</span>突发事件与延期待办</h3>
+        <div class="sub"><div class="st">全公司停电致服务器宕机（已闭环）</div>
+        <div class="sd">两台本地服务器宕机，MySQL/Redis/Docker/RocketMQ/ipad 服务已紧急恢复并完成数据恢复与故障排查。</div></div>
+        <div class="sub"><div class="st">销售系统迁移延期</div>
+        <div class="sd">因更高优先级需求插队，鉴权/菜单/按钮权限迁移综合系统上线时间顺延，当前联调中。</div></div>
+        <div class="sub"><div class="st">数据系统业绩统计账单延期</div>
+        <div class="sd">各公司各产品业绩统计（P0，原计划 11.19）仍在需求开发，为当前最长延期项。</div></div>
       </div>
     </div>
+    <div class="note">统计口径：基于四份「周总结及下周计划」文档与需求管理表「11.23–11.27周」数据；事项状态以需求管理表最新状态为准。</div>
   </div>
+  </section>
 
+  <!-- ============ 二、各负责人推进明细 ============ -->
+  <section id="sec2">
+  <h2>二、各负责人推进明细</h2>
+  <div class="ov">
+
+    <div class="col">
+      <h3><span class="idx">曾</span>曾珮琤 <span style="font-size:11.5px;color:var(--ink-3);font-weight:500;">上线 14 · 推动节点 16</span></h3>
+      <div class="sub"><div class="st">销售系统（已交付 8 项）</div>
+      <div class="sd">汪总需求修改、渠道成交数据一段只查投教、订单同客户渠道唯一兜底/count_name 兜底、排班绩效排除 500 及以下并可按组查看新增到课、在职继承标签筛选错误修复、排班绩效同期互查、进线渠道刷任务行为导出。</div></div>
+      <div class="sub"><div class="st">获客系统（交付 6 项 · 测试/开发中 2 项）</div>
+      <div class="sd">已交付：新主体小红书获客无渠道、回传字段新增 small_amount、可分配上限降级限制、获客链接回传；假频繁企微仿用户验证进入业务测试；手机号授权（脱敏、动态开启）后端开发完成。</div></div>
+      <div class="sub"><div class="st">运维系统（已交付 2 项）</div>
+      <div class="sd">前端静态文件 CDN 改造（节约流量费用）、直播场次信息自动同步企微表格。</div></div>
+    </div>
+
+    <div class="col">
+      <h3><span class="idx">陈</span>陈凡凡 <span style="font-size:11.5px;color:var(--ink-3);font-weight:500;">上线 3 · 推动节点 5</span></h3>
+      <div class="sub"><div class="st">销售系统 + 合规系统（V1.0 已上线）</div>
+      <div class="sd">企微客户退款申请审批 V1.0：微信 id 查订单接口、退款审批接口、退款状态接口均已上线。</div></div>
+      <div class="sub"><div class="st">合规系统（V2.0 后端开发完成，待联调）</div>
+      <div class="sd">会话存档拉取接口、企微账号/部门查询接口、退款查询/审核/导出接口、5 分钟定时拉取会话数据，计划 12.2 联调。</div></div>
+      <div class="sub"><div class="st">群发助手（第三轮测试完成）</div>
+      <div class="sd">ipad 新包群发风控测试完成并输出报告；模拟点击方案（好友列表、标签筛选、客户端工具）开发中，计划 12.2–12.3。</div></div>
+      <div class="sub"><div class="st">运维与 auth</div>
+      <div class="sd">停电宕机服务器恢复完成（MySQL/Redis/Docker/RocketMQ/ipad）；auth 系统群发临时角色已配置。</div></div>
+    </div>
+
+    <div class="col">
+      <h3><span class="idx">彭</span>彭嵩 <span style="font-size:11.5px;color:var(--ink-3);font-weight:500;">上线 3 · 推动节点 5</span></h3>
+      <div class="sub"><div class="st">销售/合规系统（已交付 3 项）</div>
+      <div class="sd">企微侧边栏退款发起、合规订单退款审核、销售系统新增账号接口修改。</div></div>
+      <div class="sub"><div class="st">直播系统（开发完成，待合并交付）</div>
+      <div class="sd">小鹅通商品管理开发完成，待小程序新增订单列表后一并交付。</div></div>
+      <div class="sub"><div class="st">小鹅通直播小程序（开发完成）</div>
+      <div class="sd">支付改为总部支付、websocket 实时获取商品状态、自动录单。</div></div>
+      <div class="sub"><div class="st">进行中</div>
+      <div class="sd">销售系统按钮/列表权限综合系统手动配置、系统迁移（需求插队延期）均处联调阶段。</div></div>
+    </div>
+
+    <div class="col">
+      <h3><span class="idx">谢</span>谢林容 <span style="font-size:11.5px;color:var(--ink-3);font-weight:500;">上线 0 · 推动节点 21</span></h3>
+      <div class="sub"><div class="st">直播/订单系统（11 项完成，进入联调）</div>
+      <div class="sd">小鹅通直播全链路：appId 保存、直播列表分页查询、直播老师配置、直播转专链、商品配置与操作（上下架/推送/价格隐藏/抢光）、总部登录/下单/订单查询接口兼容改造。</div></div>
+      <div class="sub"><div class="st">销售系统迁移（需求插队延期）</div>
+      <div class="sd">鉴权体系、菜单路由、按钮权限、数据权限迁移综合系统，联调中，上线顺延。</div></div>
+      <div class="sub"><div class="st">auth 系统（3 项待联调）</div>
+      <div class="sd">父部门应用至子部门、外部非钉钉用户手动新增同步、钉钉人员新增/离职同步至销售系统。</div></div>
+    </div>
+
+    <div class="col">
+      <h3><span class="idx">牟</span>牟俊红（数据系统） <span style="font-size:11.5px;color:var(--ink-3);font-weight:500;">完成 5 · 进行中 4</span></h3>
+      <div class="sub"><div class="st">本周完成 5 项</div>
+      <div class="sd">100 期投流费用核验、每期各渠道投产比、电话资源订单逻辑回溯、各渠道投产比&到课率、101 期投流费用核验。</div></div>
+      <div class="sub"><div class="st">进行中 4 项</div>
+      <div class="sd">各公司各产品业绩统计账单（P0，原计划 11.19，延期）、新增自然流结算规则、一段各业务员业绩统计、一段各业务员资源数统计（计划 11.27）。</div></div>
+    </div>
+
+    <div class="col" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;background:linear-gradient(150deg,#eef3ff 0%,#fcfdff 70%);">
+      <div style="font-size:13px;font-weight:700;color:#16214a;">本周交付结构</div>
+      <div style="font-size:12.5px;color:var(--ink-2);text-align:center;line-height:1.9;">
+        已完成 <b class="c-green">43</b> 项（55.8%）<br>
+        进行中 <b class="c-blue">19</b> 项（24.7%）<br>
+        未开始/长期 <b class="c-orange">15</b> 项（19.5%）
+      </div>
+      <div style="font-size:11.5px;color:var(--ink-3);text-align:center;">交付重心：获客回传与销售系统优化、<br>小鹅通直播链路、企微退款审批</div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============ 三、数据可视化 ============ -->
+  <section id="sec3">
+  <h2>三、数据可视化</h2>
   <div class="charts">
     <div class="card">
-      <h3><span class="idx">4</span>各负责人需求/事项占比</h3>
-      <div class="share-row"><span class="nm">曾珮琤</span><div class="track"><div class="bar" style="width:100%"></div></div><span class="val"><b>21 项</b> · 35.6%</span></div>
-      <div class="share-row"><span class="nm">谢林容</span><div class="track"><div class="bar" style="width:66.7%"></div></div><span class="val"><b>14 项</b> · 23.7%</span></div>
-      <div class="share-row"><span class="nm">彭嵩</span><div class="track"><div class="bar" style="width:47.6%"></div></div><span class="val"><b>10 项</b> · 16.9%</span></div>
-      <div class="share-row"><span class="nm">牟俊红</span><div class="track"><div class="bar" style="width:38.1%"></div></div><span class="val"><b>8 项</b> · 13.6%</span></div>
-      <div class="share-row"><span class="nm">陈凡凡</span><div class="track"><div class="bar" style="width:28.6%"></div></div><span class="val"><b>6 项</b> · 10.2%</span></div>
-      <div class="chart-note">口径：本周登记需求 59 项（不含长期协助事项），按需求管理表「11.23–11.27周」页签负责人列统计。</div>
+      <h3><span class="idx">1</span>各负责人需求/事项占比</h3>
+      <div class="share-row"><div class="nm">曾珮琤</div><div class="track"><div class="bar" style="width:100%;"></div></div><div class="val"><b>27</b> 项 / 35.1%</div></div>
+      <div class="share-row"><div class="nm">谢林容</div><div class="track"><div class="bar" style="width:67%;"></div></div><div class="val"><b>18</b> 项 / 23.4%</div></div>
+      <div class="share-row"><div class="nm">彭嵩</div><div class="track"><div class="bar" style="width:56%;"></div></div><div class="val"><b>15</b> 项 / 19.5%</div></div>
+      <div class="share-row"><div class="nm">牟俊红</div><div class="track"><div class="bar" style="width:33%;"></div></div><div class="val"><b>9</b> 项 / 11.7%</div></div>
+      <div class="share-row"><div class="nm">陈凡凡</div><div class="track"><div class="bar" style="width:30%;"></div></div><div class="val"><b>8</b> 项 / 10.4%</div></div>
+      <div class="chart-note">统计口径：需求管理表「11.23–11.27周」各负责人页签本周新增事项数，合计 77 项。</div>
     </div>
     <div class="card">
-      <h3><span class="idx">5</span>各负责人推进情况</h3>
-      <div class="stk-row">
-        <div class="top"><span class="nm">曾珮琤</span><span class="num">已完成 <b>13</b> · 进行中 <b>7</b> · 未开始 <b>1</b></span></div>
-        <div class="stk-bar"><div class="sg-done" style="width:61.9%"></div><div class="sg-dev" style="width:33.3%"></div><div class="sg-plan" style="width:4.8%"></div></div>
-      </div>
-      <div class="stk-row">
-        <div class="top"><span class="nm">谢林容</span><span class="num">已完成 <b>1</b> · 进行中 <b>12</b> · 未开始 <b>1</b></span></div>
-        <div class="stk-bar"><div class="sg-done" style="width:7.1%"></div><div class="sg-dev" style="width:85.8%"></div><div class="sg-plan" style="width:7.1%"></div></div>
-      </div>
-      <div class="stk-row">
-        <div class="top"><span class="nm">彭嵩</span><span class="num">已完成 <b>3</b> · 进行中 <b>4</b> · 未开始 <b>3</b></span></div>
-        <div class="stk-bar"><div class="sg-done" style="width:30%"></div><div class="sg-dev" style="width:40%"></div><div class="sg-plan" style="width:30%"></div></div>
-      </div>
-      <div class="stk-row">
-        <div class="top"><span class="nm">牟俊红</span><span class="num">已完成 <b>3</b> · 进行中 <b>5</b> · 未开始 <b>0</b></span></div>
-        <div class="stk-bar"><div class="sg-done" style="width:37.5%"></div><div class="sg-dev" style="width:62.5%"></div></div>
-      </div>
-      <div class="stk-row">
-        <div class="top"><span class="nm">陈凡凡</span><span class="num">已完成 <b>1</b> · 进行中 <b>4</b> · 未开始 <b>1</b></span></div>
-        <div class="stk-bar"><div class="sg-done" style="width:16.7%"></div><div class="sg-dev" style="width:66.6%"></div><div class="sg-plan" style="width:16.7%"></div></div>
-      </div>
+      <h3><span class="idx">2</span>各负责人推进情况</h3>
+      <div class="stk-row"><div class="top"><span class="nm">曾珮琤</span><span class="num">共 <b>27</b> 项</span></div>
+        <div class="stk-bar"><div class="sg-done" style="width:70.4%;"></div><div class="sg-dev" style="width:14.8%;"></div><div class="sg-plan" style="width:14.8%;"></div></div></div>
+      <div class="stk-row"><div class="top"><span class="nm">谢林容</span><span class="num">共 <b>18</b> 项</span></div>
+        <div class="stk-bar"><div class="sg-done" style="width:61.1%;"></div><div class="sg-dev" style="width:27.8%;"></div><div class="sg-plan" style="width:11.1%;"></div></div></div>
+      <div class="stk-row"><div class="top"><span class="nm">彭嵩</span><span class="num">共 <b>15</b> 项</span></div>
+        <div class="stk-bar"><div class="sg-done" style="width:26.7%;"></div><div class="sg-dev" style="width:20%;"></div><div class="sg-plan" style="width:53.3%;"></div></div></div>
+      <div class="stk-row"><div class="top"><span class="nm">牟俊红</span><span class="num">共 <b>9</b> 项</span></div>
+        <div class="stk-bar"><div class="sg-done" style="width:55.6%;"></div><div class="sg-dev" style="width:44.4%;"></div><div class="sg-plan" style="width:0%;"></div></div></div>
+      <div class="stk-row"><div class="top"><span class="nm">陈凡凡</span><span class="num">共 <b>8</b> 项</span></div>
+        <div class="stk-bar"><div class="sg-done" style="width:50%;"></div><div class="sg-dev" style="width:37.5%;"></div><div class="sg-plan" style="width:12.5%;"></div></div></div>
       <div class="legend">
-        <span><span class="dot" style="background:#16a34a"></span>已完成</span>
-        <span><span class="dot" style="background:#2563eb"></span>进行中/待联调/测试中</span>
-        <span><span class="dot" style="background:#f59e0b"></span>未开始</span>
+        <span><span class="dot" style="background:#0aa870;"></span>已完成</span>
+        <span><span class="dot" style="background:#2b5cff;"></span>进行中</span>
+        <span><span class="dot" style="background:#f5882b;"></span>未开始</span>
       </div>
     </div>
-
   </div>
   </section>
 
-  <section id="sec2">
-  <h2>二、各系统进展明细</h2>
-  <div class="tbl-wrap"><table>
-    <tr><th style="width:118px">系统/模块</th><th>重点事项与进展</th><th style="width:84px">负责人</th></tr>
-    <tr>
-      <td class="sys">获客系统</td>
-      <td>
-        <div class="it"><div class="ttl">企微仿真能力建设 <span class="tag t-test">测试中</span></div><div class="dsc">假频繁企微仿用户验证完成本地私微添加测试版；可分配上限限制机制完成（频繁后优先降级为上限为 0 的企微）</div></div>
-        <div class="it"><div class="ttl">获客链路修复与回传 <span class="tag t-done">已完成</span></div><div class="dsc">新主体小红书获客无渠道已解决；获客链接回传已实现；成交订单回传字段新增 small_amount</div></div>
-        <div class="it"><div class="ttl">手机号授权及储存脱敏 <span class="tag t-plan">排期中 · 12.1</span></div></div>
-      </td>
-      <td>曾珮琤</td>
-    </tr>
-    <tr>
-      <td class="sys">销售系统</td>
-      <td>
-        <div class="it"><div class="ttl">小鹅通支付替换为总部 <span class="tag t-dev">待联调 · 计划 11.27 上线</span></div><div class="dsc"><b>9 个功能点本周开发完成</b>：小程序保存 appId、直播列表分页查询、直播配置老师、直播转专链、复制专链返回直播 id、直播配置商品、商品上下架/推送/价格隐藏/抢光、登录接口改造兼容；另管理系统修改 3 项（父部门应用至子部门、外部非钉钉用户同步、钉钉人员增离职同步）同批待联调，<b>需求完成上线时间为 11.27</b></div></div>
-        <div class="it"><div class="ttl">系统迁移至综合系统管控 <span class="tag t-dev">因更高优先级需求插队 · 上线时间顺延（原计划 11.23）</span></div><div class="dsc">鉴权、菜单路由、按钮权限、数据权限整体迁移，功能开发完成；<b>需先完成小鹅通支付修改（计划 11.27）后开始联调</b>，上线时间相应顺延</div></div>
-        <div class="it"><div class="ttl">常规修改与口径修正 <span class="tag t-done">已上线</span></div><div class="dsc">按汪总需求完成修改；渠道成交数据查询口径修正（投教只查投教、IP 只查 IP 链路）；关闭订单同客户渠道唯一兜底 / count_name 兜底；新增客户微信 id 查订单接口</div></div>
-      </td>
-      <td>谢林容<br>陈凡凡<br>彭嵩</td>
-    </tr>
-    <tr>
-      <td class="sys">合规系统</td>
-      <td>
-        <div class="it"><div class="ttl">退款审批闭环 V1.0 <span class="tag t-done">已上线</span></div><div class="dsc">退款审批接口、退款状态接口上线：销售端发起退款，审核人员确认后改状态为退款成功/失败并说明原因</div></div>
-        <div class="it"><div class="ttl">退款审核 V2.0 <span class="tag t-dev">开发中 · 计划 12.2</span></div><div class="dsc">群聊会话查询及聊天数据筛选、审核接口改造（新增审核人、计算扣款金额）、订单退款导出</div></div>
-        <div class="it"><div class="ttl">会话存档改造 <span class="tag t-dev">开发中</span></div><div class="dsc">退款信息获取改造会话存档、内容存入 ES</div></div>
-      </td>
-      <td>陈凡凡<br>曾珮琤</td>
-    </tr>
-    <tr>
-      <td class="sys">运维系统</td>
-      <td>
-        <div class="it"><div class="ttl">23 楼直播间断网排查 <span class="tag t-done">已完成 · 11.25</span></div><div class="dsc">10/12 断网问题排查及老师电脑重装已完成</div></div>
-        <div class="it"><div class="ttl">静态文件改造 CDN <span class="tag t-dev">方案确定</span></div></div>
-        <div class="it"><div class="ttl">直播场次自动同步企微表格 <span class="tag t-done">本地验证完成</span></div></div>
-      </td>
-      <td>曾珮琤</td>
-    </tr>
-    <tr>
-      <td class="sys">直播系统</td>
-      <td>
-        <div class="it"><div class="ttl">小鹅通商品管理 <span class="tag t-done">已完成</span></div></div>
-        <div class="it"><div class="ttl">直播管理 / 直播转专链 <span class="tag t-dev">进行中 · 11.27 上线</span></div></div>
-      </td>
-      <td>彭嵩</td>
-    </tr>
-    <tr>
-      <td class="sys">小鹅通直播小程序</td>
-      <td>
-        <div class="it"><div class="ttl">支付改自有支付 + websocket 商品状态 <span class="tag t-dev">进行中 · 11.27 上线</span></div></div>
-      </td>
-      <td>彭嵩</td>
-    </tr>
-    <tr>
-      <td class="sys">群发助手</td>
-      <td>
-        <div class="it"><div class="ttl">企微账号风控测试 <span class="tag t-test">第三轮测试中</span></div><div class="dsc">使用 iPad 新包进行风控测试</div></div>
-        <div class="it"><div class="ttl">模拟点击 / 标签筛选可行性 <span class="tag t-done">调研完成</span></div><div class="dsc">模拟点击、逆向企微可行性方案调研完成；普通标签、聊天标签筛选可行性验证完成</div></div>
-      </td>
-      <td>陈凡凡</td>
-    </tr>
-    <tr>
-      <td class="sys">企微侧边栏退款</td>
-      <td>
-        <div class="it"><div class="ttl">退款发起功能 <span class="tag t-done">已上线</span> <span class="tag t-dev">合规调整中 · 11.30</span></div><div class="dsc">合规部查看后要求调整，预计 11.30 完成</div></div>
-      </td>
-      <td>彭嵩</td>
-    </tr>
-    <tr>
-      <td class="sys">订单系统</td>
-      <td>
-        <div class="it"><div class="ttl">小鹅通直播支付改自有微信商务号 <span class="tag t-dev">进行中</span></div><div class="dsc">含商品关联、录单关联、邀请人关联方式</div></div>
-        <div class="it"><div class="ttl">总部登录接口兼容小鹅通直播 <span class="tag t-dev">进行中 · 计划 11.27</span></div></div>
-      </td>
-      <td>曾珮琤<br>谢林容</td>
-    </tr>
-    <tr>
-      <td class="sys">数据系统</td>
-      <td>
-        <div class="it"><div class="ttl">业绩统计账单 / 100 期投流费用核验 <span class="tag t-block">P0 · 已逾期（11.19 / 11.20）</span></div><div class="dsc">均为 P0、来自财务部/流量部，截至周中仍进行中</div></div>
-        <div class="it"><div class="ttl">自然流结算规则 / 业务员业绩与资源数统计 <span class="tag t-dev">进行中 · 11.25 / 11.27</span></div></div>
-        <div class="it"><div class="ttl">投产比类需求 <span class="tag t-done">3 项已完成</span></div><div class="dsc">每期各渠道投产比、电话资源订单逻辑回溯、各渠道投产比&到课率</div></div>
-      </td>
-      <td>牟俊红</td>
-    </tr>
-    <tr>
-      <td class="sys">云策获客小程序</td>
-      <td>
-        <div class="it"><div class="ttl">获取用户手机号 <span class="tag t-plan">未开始 · 计划 12.1</span></div></div>
-      </td>
-      <td>彭嵩</td>
-    </tr>
+  <!-- ============ 四、重点关注与风险 ============ -->
+  <section id="sec4">
+  <h2>四、重点关注与风险</h2>
+  <div class="risk">
+    <span class="lv">高</span>
+    <div class="rt">销售系统迁移（综合系统管控）延期上线</div>
+    <div class="rd">因更高优先级需求插队，鉴权体系、菜单路由、按钮权限、数据权限迁移综合系统上线时间顺延；当前联调中，迁移上线前还需改造销售系统员工信息查询（新增无需鉴权接口）。</div>
+    <div class="ra">涉及：彭嵩、谢林容 ｜ 关注动作：迁移上线窗口需与插队需求重新对齐排期</div>
+  </div>
+  <div class="risk m">
+    <span class="lv">中</span>
+    <div class="rt">订单退款审核与使用方预期差异过大，需二次开发</div>
+    <div class="rd">V1.0 已上线但功能与合规部使用预期差异较大，需重新二次开发；受此影响，群发助手模拟点击功能完成时间可能后延。</div>
+    <div class="ra">涉及：陈凡凡 ｜ 关注动作：二次开发范围需先与需求方对齐，避免反复返工</div>
+  </div>
+  <div class="risk m">
+    <span class="lv">中</span>
+    <div class="rt">企微个人标签无官方查询接口，模拟点击筛选能力受限</div>
+    <div class="rd">调研结论：企微开放平台仅提供企业标签及外部联系人关系查询接口，个人标签及聊天标签属个人自定义、无查询接口，模拟点击按好友标签筛选只能基于企业标签实现。</div>
+    <div class="ra">涉及：陈凡凡 ｜ 关注动作：与业务方确认筛选口径是否接受企业标签方案</div>
+  </div>
+  <div class="risk m">
+    <span class="lv">中</span>
+    <div class="rt">小鹅通直播支付替换暂缓上线</div>
+    <div class="rd">支付替换原计划本周上线，后端链路已完成开发进入联调；因前端需新增订单详情页面，整体暂缓上线，待前端补充完成后统一交付。</div>
+    <div class="ra">涉及：彭嵩、谢林容 ｜ 关注动作：订单详情页排期需尽快确认，避免联调成果闲置</div>
+  </div>
+  <div class="risk m" style="border-left-color:var(--green);">
+    <span class="lv" style="background:var(--green-bg);color:var(--green);">已闭环</span>
+    <div class="rt">全公司停电致本地服务器宕机（已恢复）</div>
+    <div class="rd">上周末全公司停电致两台本地服务器宕机，MySQL、Redis、Docker、RocketMQ、ipad 相关服务已紧急恢复，数据完成恢复并重新配置 IP，故障排查完毕。</div>
+    <div class="ra">涉及：陈凡凡 ｜ 建议：评估本地部署服务的容灾与自动拉起机制</div>
+  </div>
+  </section>
+
+  <!-- ============ 五、下周推进计划 ============ -->
+  <section id="sec5">
+  <h2>五、下周推进计划</h2>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th style="width:96px;">负责人</th><th style="width:150px;">系统</th><th>事项</th><th style="width:84px;">周进度</th><th style="width:64px;">优先级</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="sys" rowspan="4">曾珮琤</td>
+        <td>获客系统</td><td>新增手机号授权、储存脱敏-满足动态开启</td><td><span class="tag t-test">联调</span></td><td>P1</td>
+      </tr>
+      <tr><td>获客系统</td><td>【优化投流模型】B 站加上回传（AUTO_SMALL_ORDER=小单、CLUE_VALID=开口、OPEN_ACTION_VALID=删微）</td><td><span class="tag t-dev">开发</span></td><td>P1</td></tr>
+      <tr><td>运维系统</td><td>小鹅通切换千壑域名</td><td><span class="tag t-plan">排期</span></td><td>P1</td></tr>
+      <tr><td>销售系统</td><td>单人单会话搜索关键词</td><td><span class="tag t-dev">开发</span></td><td>P3</td></tr>
+      <tr>
+        <td class="sys" rowspan="3">陈凡凡</td>
+        <td>销售系统</td><td>会话存档、企微账号/部门查询、企微账号源/企业标签源接口、按企业标签筛选好友——5 项接口上线</td><td><span class="tag t-done">上线</span></td><td>P0</td>
+      </tr>
+      <tr><td>合规系统</td><td>退款查询/审核/导出接口上线，定时任务每 5 分钟拉取会话数据</td><td><span class="tag t-done">上线</span></td><td>P1</td></tr>
+      <tr><td>群发助手</td><td>模拟点击功能开发（activity/XpathLite 定位、adb 解锁脚本、uiautomator2 自动点击、数据源整合、Windows 可视化窗口）</td><td><span class="tag t-dev">开发</span></td><td>P1</td></tr>
+      <tr>
+        <td class="sys" rowspan="5">彭嵩</td>
+        <td>小鹅通直播小程序</td><td>新增用户订单列表，接入微吼订单流程</td><td><span class="tag t-dev">待开发</span></td><td>P0</td>
+      </tr>
+      <tr><td>微吼直播小程序</td><td>新增小程序用户分享</td><td><span class="tag t-dev">开发</span></td><td>P0</td></tr>
+      <tr><td>微吼直播小程序</td><td>兼容小鹅通直播，修改接口传参</td><td><span class="tag t-dev">开发</span></td><td>P0</td></tr>
+      <tr><td>合规系统</td><td>退款订单页面样式修改</td><td><span class="tag t-dev">优化</span></td><td>P1</td></tr>
+      <tr><td>直播系统</td><td>中控台用户评论列表阻止/通过与右侧评论区同步</td><td><span class="tag t-dev">优化</span></td><td>P1</td></tr>
+      <tr>
+        <td class="sys" rowspan="2">谢林容</td>
+        <td>直播系统</td><td>销讲部新需求分析与技术文档梳理、开发排期（含观众明细、带货明细字段扩展评估）</td><td><span class="tag t-dev">分析</span></td><td>P1</td>
+      </tr>
+      <tr><td>订单系统</td><td>销售系统迁移上线配套改造：员工信息查询新增无需鉴权接口</td><td><span class="tag t-dev">优化</span></td><td>P1</td></tr>
+      <tr>
+        <td class="sys" rowspan="2">牟俊红<br><span style="font-size:11px;color:var(--ink-3);font-weight:500;">数据系统</span></td>
+        <td>数据系统</td><td>各公司各产品业绩统计（账单）——延期推进中</td><td><span class="tag t-block">延期</span></td><td>P0</td>
+      </tr>
+      <tr><td>数据系统</td><td>一段各业务员业绩统计、资源数统计收尾；新增自然流结算规则</td><td><span class="tag t-dev">开发</span></td><td>P1</td></tr>
+    </tbody>
   </table>
   </div>
+  <div class="note">说明：下周计划依据各负责人周总结「下周项目推进计划」及需求管理表未完成事项整理；小鹅通直播支付替换待前端订单详情页排期后统一上线。</div>
   </section>
 
-  <section id="sec3">
-  <h2>三、问题与风险</h2>
+  <div class="foot">数据来源：Week1123 各负责人「钱坤云业务系统周总结及下周计划」（曾珮琤、陈凡凡、彭嵩、谢林容）及《钱坤云业务系统需求管理表》（11.23–11.27周）｜ 往期：<a href="midweek-1123.html" style="color:var(--blue);">周中进展汇报（11.23–11.25）</a></div>
 
-  <div class="risk">
-    <span class="lv">高风险 · 上线时间顺延</span>
-    <div class="rt">1. 销售系统迁移（综合系统管控）因更高优先级需求插队，上线时间顺延</div>
-    <div class="rd">鉴权体系、菜单路由、按钮权限、数据权限整体迁移至综合系统管控，因更高优先级需求插队，原计划 11.23 上线顺延；目前功能开发完成，需先完成小鹅通支付修改（计划 11.27 上线）后开始联调，上线时间相应顺延。</div>
-    <div class="ra">责任方：谢林容 / 彭嵩 ｜ 建议：重新锁定联调与上线时间。</div>
-  </div>
-
-  <div class="risk">
-    <span class="lv">高风险 · 逾期</span>
-    <div class="rt">2. 数据系统两项 P0 需求已超计划完成时间</div>
-    <div class="rd">各公司各产品业绩统计（账单）计划 11.19、100 期投流费用核验计划 11.20，均为 P0 且来自财务部/流量部，截至周中仍为进行中；一段各业务员业绩/资源数统计（计划 11.27）节点临近。</div>
-    <div class="ra">责任方：牟俊红 ｜ 建议：核对逾期原因并给出新的完成承诺，同步知会需求方。</div>
-  </div>
-
-  <div class="risk m">
-    <span class="lv">中风险 · 影响排期</span>
-    <div class="rt">3. 订单退款审核功能与需求方预期差异过大，需二次开发</div>
-    <div class="rd">退款审批 V1.0 已按期上线，但与需求使用方预期差异过大，需重新二次开发（V2.0 计划 12.2）；连带影响群发助手模拟点击功能，客户端工具整合开发（计划 12.3）完成时间可能延后。</div>
-    <div class="ra">责任方：陈凡凡 ｜ 建议：先与需求使用方对齐 V2.0 验收标准后再启动开发，避免二次返工。</div>
-  </div>
-
-  <div class="risk m">
-    <span class="lv">中风险 · 能力受限</span>
-    <div class="rt">4. 企微开放平台接口限制，个人标签/聊天标签无法查询</div>
-    <div class="rd">经调研企微开发平台全部接口，企微仅提供企业标签及外部联系人关系查询接口；个人标签、聊天标签属个人自定义，企微未提供查询接口，相关筛选能力存在硬性限制。</div>
-    <div class="ra">责任方：陈凡凡 ｜ 建议：评估基于企业标签替代或引导用户统一使用企业标签的方案，同步向需求方说明边界。</div>
-  </div>
-
-  </section>
-
-  <section id="sec4">
-  <h2>四、本周重点关注</h2>
-  <div class="card">
-    <ul class="plain">
-      <li><b>11.26 交付</b>：直播系统小鹅通商品管理完成测试上线；</li>
-      <li><b>11.27 交付</b>：直播管理/直播转专链、小鹅通直播小程序支付改造、订单系统登录接口改造、小鹅通支付替换为总部相关功能点完成测试上线；数据系统一段各业务员业绩/资源数统计同步交付；</li>
-      <li><b>风险跟踪</b>：销售系统迁移上线时间重排、数据系统两项 P0 逾期、退款审核 V2.0 方案对齐三项持续跟踪。</li>
-    </ul>
-  </div>
-  </section>
   </main>
   </div>
-
 </div>
 </body>
 </html>
